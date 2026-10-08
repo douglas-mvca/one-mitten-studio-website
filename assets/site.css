@@ -1,0 +1,38 @@
+/* One Mitten Studio: shared page style (colours from the brand repo). */
+:root {
+  --ink: #2B2926;
+  --muted: #5D6670;
+  --blue: #1B4C7C;
+  --sky: #74C3EC;
+  --paper: #FFFFFF;
+  --wash: #F3F6F9;
+  --rule: #D9E0E7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--wash); color: var(--ink); font: 400 1.05rem/1.65 "Nunito Sans", "Segoe UI", system-ui, sans-serif; }
+header { background: var(--paper); border-bottom: 3px solid var(--sky); }
+header .inner, main { max-width: 44rem; margin: 0 auto; padding-inline: 1.25rem; }
+header .inner { padding-block: 1rem; }
+header img { height: 2.4rem; width: auto; display: block; }
+main { padding-block: 2rem 4rem; }
+h1, h2 { font-family: Montserrat, "Helvetica Neue", Arial, sans-serif; text-wrap: balance; }
+h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); font-weight: 700; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 2.2rem 0 .5rem; color: var(--blue); }
+p, ul { margin: 0 0 1rem; max-width: 65ch; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: .4rem; }
+.date { color: var(--muted); margin-bottom: 1.5rem; }
+.summary { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--sky); border-radius: 6px; padding: 1rem 1.25rem; }
+.summary ul { margin: 0; }
+a { color: var(--blue); }
+footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 3rem; }
+
+/* Home page */
+.hero { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; padding-block: 1rem 0.5rem; }
+.hero img { width: 7rem; height: auto; flex: none; }
+.hero h1 { margin: 0; }
+.hero p { margin: .25rem 0 0; color: var(--muted); font-size: 1.15rem; }
+.card { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 1.25rem 1.5rem; }
+.card h3 { font-family: Montserrat, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.25rem; margin: 0 0 .25rem; }
+.badge { display: inline-block; background: var(--wash); border: 1px solid var(--rule); border-radius: 999px; padding: .1rem .7rem; font-size: .85rem; color: var(--muted); margin-bottom: .75rem; }
+footer a { color: var(--muted); }
